@@ -1,0 +1,145 @@
+html, body, #root {
+  background: linear-gradient(130deg, #e3f0fa 68%, #d8e9fa 100%);
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center horizontally but move top vertically */
+.login-bg {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-topcenter {
+  margin-top: 46px;         /* Moves block near the top */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  max-width: 390px;
+  padding: 2.1rem 2rem 1.5rem 2rem;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #1773bb;
+  font-weight: 900;
+  letter-spacing: .5px;
+  margin-bottom: 22px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.form-row {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 0;
+}
+
+.role-row {
+  margin-bottom: 14px;
+  justify-content: flex-start;
+}
+
+.form-row label {
+  flex: 0 0 90px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: #267be7;
+  margin-right: 10px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1 1 100%;
+  padding: 10px 10px;
+  font-size: 1rem;
+  border: none;
+  background: #f3f8fb;
+  color: #22303a;
+  border-radius: 7px;
+}
+
+.email-row {
+  margin-top: 16px;
+  margin-bottom: 9px;
+}
+.password-row {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.login-btn {
+  width: 100%;
+  max-width: 350px;
+  background: linear-gradient(90deg, #197fd7 78%, #166ec3 109%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 14px 38px;
+  font-size: 1.13rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background 0.14s;
+  margin: 18px 0 0 0;
+}
+.login-btn:disabled {
+  background: #d3e2eb;
+  color: #888;
+  cursor: not-allowed;
+}
+.login-btn:hover:enabled {
+  background: linear-gradient(93deg, #145ca7 82%, #267be7 113%);
+}
+.forgot-btn {
+  background: none;
+  color: #166ec3;
+  border: none;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-top: 16px;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+  transition: text-decoration 0.12s;
+  width: 100%;
+}
+.forgot-btn:hover {
+  text-decoration: underline;
+  color: #145ca7;
+}
+
+.error-message {
+  color: #d32f2f;
+  margin-top: 17px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (max-width: 650px) {
+  .login-topcenter {
+    min-width: 99vw;
+    max-width: 99vw;
+    padding: 1.1rem 0.3rem 1rem 0.3rem;
+  }
+  .form-row, .login-btn {
+    max-width: 99vw;
+  }
+  .form-row label {
+    font-size: 0.99rem;
+    flex: 0 0 40px;
+  }
+  .login-title { font-size: 1.18rem; }
+}

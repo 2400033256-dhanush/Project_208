@@ -1,0 +1,118 @@
+body, html, #root {
+  background: #e3f0fa;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.study-bg {
+  min-height: 100vh;
+  background: #e3f0fa;
+}
+
+.study-navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 32px 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.study-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #2595ea;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.study-nav-btns {
+  display: flex;
+  gap: 14px;
+}
+.signup {
+  background: #27a2ea;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 10px 26px;
+  font-size: 1.07rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.signup:hover { background: #1885c9; }
+.login {
+  background: transparent;
+  color: #27a2ea;
+  border: 2px solid #27a2ea;
+  border-radius: 9px;
+  padding: 10px 18px;
+  font-size: 1.07rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.login:hover {
+  background: #f0f8ff;
+  color: #125590;
+}
+
+.study-hero {
+  max-width: 780px;
+  margin: 3.5rem auto 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 410px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #202029;
+  margin: 0 0 18px 0;
+  line-height: 1.15;
+  letter-spacing: -.5px;
+}
+
+.hero-desc {
+  font-size: 1.15rem;
+  color: #4b586a;
+  line-height: 1.7;
+  margin: 0 0 36px 0;
+  font-weight: 500;
+  max-width: 580px;
+}
+
+.cta-btn {
+  margin-top: 12px;
+  background: #27a2ea;
+  color: #fff;
+  border: none;
+  padding: 15px 32px 13px 32px;
+  border-radius: 12px;
+  font-size: 1.13rem;
+  font-weight: 700;
+  box-shadow: 0 5px 21px #b9dafc37;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.cta-btn:hover { background: #1885c9; }
+
+@media (max-width: 875px) {
+  .study-navbar, .study-hero { padding-left: 10px; padding-right: 10px; }
+  .study-hero { max-width: 99vw; }
+}
+@media (max-width: 650px) {
+  .study-navbar, .study-hero { flex-direction: column; align-items: flex-start; }
+  .study-nav-btns { margin-top: 8px; }
+  .hero-title { font-size: 1.45rem; }
+  .hero-desc { font-size: 1rem; }
+}
