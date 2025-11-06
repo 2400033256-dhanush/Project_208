@@ -1,0 +1,25 @@
+.added-courses-container {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 2.2rem 1.7rem 2rem 1.7rem;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+}
+
+.added-courses-container h2 {
+  color: #267be7;
+  font-weight: 900;
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+}
+
+.course-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.course-list li {
+  padding: 8px 0;
+  font-size: 1.08rem;
+  border-bottom: 1px solid #e8ecf6;
+  color: #0e2b5b;
+}

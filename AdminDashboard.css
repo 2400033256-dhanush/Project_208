@@ -1,0 +1,70 @@
+.admin-dashboard {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 2rem 1.7rem 2rem 1.7rem;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: none;
+}
+
+.admin-dashboard h2 {
+  color: #197fd7;
+  font-weight: 900;
+  font-size: 2.1rem;
+  margin-bottom: 2.2rem;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.dashboard-buttons {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 2.8rem;
+}
+
+.tab-btn {
+  background: #f3f8fb;
+  color: #166ec3;
+  border: 1.8px solid #d1ddec;
+  border-radius: 7px 7px 0 0;
+  font-weight: 700;
+  font-size: 1.07rem;
+  padding: 16px 32px 15px 32px;
+  transition: background 0.17s, color 0.17s, border 0.17s;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 12px #166ec333;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: #197fd7;
+  color: #fff;
+  border: 2.5px solid #197fd7;
+  box-shadow: 0 6px 24px #197fd733;
+}
+
+.btn.back-btn {
+  margin-top: 2.4rem;
+  background: #267be7;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 30px;
+  font-size: 1.14rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.17s;
+  box-shadow: 0 4px 16px #267be710;
+}
+
+.btn.back-btn:hover {
+  background: #145ca7;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .admin-dashboard { padding: 1.2rem 0.4rem 1rem 0.4rem; }
+  .dashboard-buttons { gap: 10px; flex-wrap: wrap; }
+  .tab-btn { padding: 14px 13px; font-size: 1rem; }
+  .admin-dashboard h2 { font-size: 1.24rem; }
+}
