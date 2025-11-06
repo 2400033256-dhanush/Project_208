@@ -1,0 +1,109 @@
+body, html, #root {
+  background: linear-gradient(120deg, #e3f0fa 60%, #d8e9fa 100%);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background: linear-gradient(90deg, #1c56d3 67%, #0c4aa0 109%);
+  box-shadow: 0 2px 11px #0278a14a;
+  padding: 0.61rem 0 0.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.12rem;
+  margin: 0;
+  letter-spacing: .01em;
+}
+.registration-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.reg-top-heading {
+  width: 100vw;
+  max-width: 420px;
+  margin: 0 auto 8px auto;
+  font-size: 1.07rem;
+  font-weight: 900;
+  color: #166ec3;
+  text-align: center;
+  letter-spacing: 0.02em;
+  background: #f1f8fd;
+  box-shadow: 0 2px 8px #149ac21a;
+  border-radius: 10px;
+  padding: 8px 6px 7px 6px;
+}
+.select-label {
+  font-size: 0.97rem;
+  color: #267be7;
+  font-weight: 600;
+  margin-bottom: 2px;
+  margin-top: 7px;
+  text-align: center;
+  width: 100vw;
+  max-width: 340px;
+}
+.select-on-top {
+  width: 100vw;
+  max-width: 340px;
+  padding: 7px 9px;
+  margin-bottom: 6px;
+  border-radius: 7px;
+  border: 1px solid #d1ddec;
+  background: #f3f8fb;
+  color: #22303a;
+  font-size: 0.92rem;
+}
+.reg-btn-on-top {
+  min-width: 140px;
+}
+.registered-section {
+  background: #f2f7fb;
+  border-radius: 11px;
+  padding: 0.67rem 0.88rem 0.75rem 0.95rem;
+  box-shadow: 0 2px 7px #bdeaff22;
+  max-width: 320px;
+  margin-top: 8px;
+}
+.registered-section h3 {
+  color: #197fd7;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+.registered-section ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: #2d4770;
+  font-size: 0.89rem;
+}
+.btn, .primary-btn {
+  background: linear-gradient(90deg, #23c0dd 61%, #197fd7 109%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 15px;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: background 0.14s;
+  box-shadow: 0 2px 7px #197fd710;
+  margin-bottom: 0;
+}
+.btn:hover, .primary-btn:hover {
+  background: linear-gradient(93deg, #166ec3 82%, #267be7 113%);
+}
+@media (max-width: 650px) {
+  .header h1 { font-size: 0.96rem; }
+  .reg-top-heading { font-size: 0.95rem; padding: 7px 2px 7px 2px; }
+  .select-on-top { max-width: 99vw; }
+}
